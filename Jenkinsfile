@@ -18,7 +18,7 @@ pipeline {
       steps {
         sh 'docker stop flask-app || true'
         sh 'docker rm flask-app || true'
-        sh 'docker run -d --name flask-container -p 5000:5000 flask-app'
+        sh 'docker run -d --name flask-app -p 5000:5000 flask-app'
       }
     }
   }
